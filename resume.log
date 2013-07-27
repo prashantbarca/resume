@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.30)  28 JUL 2013 02:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.30)  28 JUL 2013 02:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,8 +121,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.75 \\
-       \textbf{Proficient in -} Ubuntu,Debian,CentOS,RHEL,Fedora,ArchLinux,W...
-
+        Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu,Windows 7,Windows XP
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -131,9 +130,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \\\textbf
-              {Proficient in -} Ubuntu,Debian,CentOS,RHEL,Fedora,ArchLinux,W...
-
+l.75 \\ D
+         ebian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu,Windows 7,Windows XP
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -172,7 +170,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on resume.pdf (2 pages, 102891 bytes).
+Output written on resume.pdf (2 pages, 103424 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
