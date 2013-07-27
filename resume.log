@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.30)  28 JUL 2013 02:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.30)  28 JUL 2013 02:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -62,6 +62,12 @@ Type  H <return>  for immediate help.
                                                   
 l.38         \item E
                     xpected graduation date: June 2015
+? ^^[[A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
 ? 
 
 Overfull \hbox (22.56393pt too wide) in paragraph at lines 48--51
@@ -110,12 +116,6 @@ l.71     \textbf
                 {Tools I Use}  \\Vim Text Editor, Ruby on Rails, Git version...
 
 ? 
-
-Overfull \hbox (99.06465pt too wide) in paragraph at lines 71--74
-\OT1/cmr/m/n/10 Vim Text Ed-i-tor, Ruby on Rails, Git ver-sion con-trol(this re
--sume it-self is hosted at https://github.com/prashantbarca/resume
- []
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -176,7 +176,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on resume.pdf (2 pages, 103395 bytes).
+Output written on resume.pdf (2 pages, 103384 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
