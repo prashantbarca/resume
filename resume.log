@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.30)  28 JUL 2013 02:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  6 OCT 2013 08:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -62,12 +62,6 @@ Type  H <return>  for immediate help.
                                                   
 l.38         \item E
                     xpected graduation date: June 2015
-? ^^[[A
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
 ? 
 
 Overfull \hbox (22.56393pt too wide) in paragraph at lines 48--51
@@ -98,13 +92,15 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.67     \textbf
-                {Proficient in -}  Ruby, C, C++, shell scripting, Python, Or...
-
+                {Proficient in -}  Ruby, C, C++, Shell scripting, Python, JAVA
 ? 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 68.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -116,9 +112,6 @@ l.71     \textbf
                 {Tools I Use}  \\Vim Text Editor, Ruby on Rails, Git version...
 
 ? 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -126,8 +119,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \\
-        Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu,Windows 7,Windows XP
+l.76     \\
+            GNU/Linux(Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu),Windows 7,...
+
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -136,8 +130,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \\ D
-         ebian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu,Windows 7,Windows XP
+l.76     \\ G
+             NU/Linux(Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu),Windows 7,...
+
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -146,7 +141,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 	 \\\section
+l.80 	 \\\section
                  {\mysidestyle Other\\Accompli-\\shments}\\
 ? 
 
@@ -156,10 +151,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80     \textbf
+l.81     \textbf
                 {Worked as Junior Correspondent at "The Guindy Times" -}"The...
 
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--87
+
+ []
+
 [2] ) 
 Here is how much of TeX's memory you used:
  302 strings out of 495059
@@ -168,7 +173,7 @@ Here is how much of TeX's memory you used:
  3566 multiletter control sequences out of 15000+200000
  6121 words of font info for 22 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,4n,21p,363b,133s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,4n,21p,365b,139s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/
@@ -176,7 +181,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on resume.pdf (2 pages, 103384 bytes).
+Output written on resume.pdf (2 pages, 102869 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
