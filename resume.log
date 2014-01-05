@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  6 OCT 2013 08:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.12.23)  5 JAN 2014 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **resume.tex
 (./resume.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
 (./resume.cls
 Document Style `resume' <26 Sep 89, Dec 07>.
 Document Class: resume 2000/05/19 v1.4b Resume class
@@ -54,6 +53,26 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -64,24 +83,19 @@ l.38         \item E
                     xpected graduation date: June 2015
 ? 
 
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+ []
+
+
 Overfull \hbox (22.56393pt too wide) in paragraph at lines 48--51
 \OT1/cmr/bx/n/10 Attended a 5 day work-shop on Free Soft-wares by Free Soft-war
 e Move-ment Kar-nataka(FSMK) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
-
  []
 
 
@@ -91,13 +105,48 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67     \textbf
-                {Proficient in -}  Ruby, C, C++, Shell scripting, Python, JAVA
+l.54     \\\\
+             \section{\mysidestyle Experience}
 ? 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 68.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 68.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54     \\\\\section
+                     {\mysidestyle Experience}
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.56 ...a} \\Worked on the existing projects in C#
+                                                   and .NET.
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--67
+
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -109,9 +158,17 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.71     \textbf
-                {Tools I Use}  \\Vim Text Editor, Ruby on Rails, Git version...
+                {Proficient in -}  Ruby, C, C++, Shell scripting, Python, JA...
 
 ? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.71 ...+, Shell scripting, Python, JAVA, .NET, C#
+                                                  
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 72.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 72.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -119,7 +176,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76     \\
+l.75     \textbf
+                {Tools I Use}  \\Vim Text Editor, Ruby on Rails, Git version...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80     \\
             GNU/Linux(Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu),Windows 7,...
 
 ? 
@@ -130,7 +203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76     \\ G
+l.80     \\ G
              NU/Linux(Debian,CentOS,RHEL,Fedora,ArchLinux,Ubuntu),Windows 7,...
 
 ? 
@@ -141,8 +214,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 	 \\\section
-                 {\mysidestyle Other\\Accompli-\\shments}\\
+l.84 	 \\\\
+           \section{\mysidestyle Other\\Accompli-\\shments}\\
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -151,29 +224,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81     \textbf
+l.84 	 \\\\\section
+                   {\mysidestyle Other\\Accompli-\\shments}\\
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85     \textbf
                 {Worked as Junior Correspondent at "The Guindy Times" -}"The...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--91
 
  []
 
 [2] ) 
 Here is how much of TeX's memory you used:
- 302 strings out of 495059
- 3199 string characters out of 3182030
- 53520 words of memory out of 3000000
- 3566 multiletter control sequences out of 15000+200000
- 6121 words of font info for 22 fonts, out of 3000000 for 9000
+ 302 strings out of 495031
+ 3199 string characters out of 6181530
+ 54165 words of memory out of 5000000
+ 3590 multiletter control sequences out of 15000+600000
+ 6121 words of font info for 22 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,4n,21p,365b,139s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,4n,21p,365b,135s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/
@@ -181,7 +264,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on resume.pdf (2 pages, 102869 bytes).
+Output written on resume.pdf (2 pages, 104319 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
