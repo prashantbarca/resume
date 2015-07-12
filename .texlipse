@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Thu Jun 30 20:46:07 WEST 2011
+builderNum=2
+outputDir=pdf
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=resume.tex
+outputFile=resume.pdf
+langSpell=en
+markDer=true
+srcDir=src
