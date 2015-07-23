@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.3)  12 JUL 2015 18:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.3)  24 JUL 2015 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,17 +492,14 @@ LaTeX Info: Redefining \nameref on input line 53.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\pagenumberwidth=\skip70
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 53.
 \makecvtitlepicturebox=\box31
- <picture.jpg, id=37, 578.16pt x 578.16pt>
+ <picture.jpg, id=32, 578.16pt x 578.16pt>
 File: picture.jpg Graphic file (type jpg)
 
 <use picture.jpg>
 Package pdftex.def Info: picture.jpg used on input line 55.
 (pdftex.def)             Requested size: 70.0pt x 69.99374pt.
-\makecvtitlepicturewidth=\skip71
+\makecvtitlepicturewidth=\skip70
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
@@ -535,6 +532,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 63.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 64.
 
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
@@ -546,34 +545,34 @@ Package microtype Info: Character `029' is missing
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 113.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 111.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/sl' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 113.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 111.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./picture.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 124.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BE49F801754FA316587BF0113FBB3877;823.
+(rerunfilecheck)             Checksum: C50D45B06759DF11D29CF144C9F57175;735.
  ) 
 Here is how much of TeX's memory you used:
- 12180 strings out of 495028
- 176598 string characters out of 6181498
- 385816 words of memory out of 5000000
- 15185 multiletter control sequences out of 15000+600000
- 61656 words of font info for 63 fonts, out of 8000000 for 9000
+ 12176 strings out of 495028
+ 176550 string characters out of 6181498
+ 384793 words of memory out of 5000000
+ 15184 multiletter control sequences out of 15000+600000
+ 61555 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,13n,72p,770b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -585,10 +584,10 @@ lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/l
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.p
 fb>
-Output written on main.pdf (2 pages, 241318 bytes).
+Output written on main.pdf (2 pages, 241014 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 21062 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 21054 words of extra memory for PDF output out of 24883 (max. 10000000)
 
