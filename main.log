@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.3)  30 SEP 2015 20:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.28)  15 FEB 2016 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (./moderncv.cls
 Document Class: moderncv 2012/10/31 v1.2.0 modern curriculum vitae and letter d
 ocument class
@@ -536,7 +536,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 83.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 82.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
@@ -544,26 +544,18 @@ Package microtype Info: Character `029' is missing
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 92.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 90.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/sl' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 92.
-
-
-Package Fancyhdr Warning: \footskip is too small (30.0pt): 
- Make it at least 36.71997pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[1
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 90.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./picture.jpg>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 93.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 95.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -571,62 +563,31 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 2538) in paragraph at lines 93--93
+Underfull \hbox (badness 2538) in paragraph at lines 96--96
 []\T1/lmss/m/n/10.95 (+20) Developed a "So-cial Net-work for shar-ing of Files 
 and Videos". The
  []
 
-! Illegal parameter number in definition of \reserved@a.
-<to be read again> 
-                   }
-l.106 ...\textsc{C#},\textsc{HTML,CSS,Javascript}}
-                                                  
-? 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> C##
-              
-l.106 ...\textsc{C#},\textsc{HTML,CSS,Javascript}}
-                                                  
-? 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
-
-Package Fancyhdr Warning: \footskip is too small (30.0pt): 
- Make it at least 36.71997pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [2]
-
-Package Fancyhdr Warning: \footskip is too small (30.0pt): 
- Make it at least 36.71997pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 134.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 2B6592575C589B83AF3A834B6F40ADB0;420
-(rerunfilecheck)             After:  988EAC964E5E656AA15C8F9F6B8A6B8E;420.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B844366BA762CCDFFC7982FEE9580DE4;417.
  ) 
 Here is how much of TeX's memory you used:
- 9044 strings out of 495028
- 135998 string characters out of 6181498
- 360561 words of memory out of 5000000
- 12044 multiletter control sequences out of 15000+600000
- 62278 words of font info for 67 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 53i,13n,72p,770b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 9058 strings out of 493304
+ 136173 string characters out of 6139870
+ 364825 words of memory out of 5000000
+ 12295 multiletter control sequences out of 15000+600000
+ 65652 words of font info for 74 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 48i,13n,67p,770b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/publ
@@ -636,10 +597,10 @@ lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/l
 msy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (3 pages, 275075 bytes).
+Output written on main.pdf (3 pages, 277182 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
  13 named destinations out of 1000 (max. 500000)
- 21582 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22094 words of extra memory for PDF output out of 24883 (max. 10000000)
 
