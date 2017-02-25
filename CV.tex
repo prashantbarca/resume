@@ -1,0 +1,204 @@
+%%%%%% Stuff to add:
+% invited (declined) seminars
+% extending knowledge: reporters, master gardner, etc.
+
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{etaremune}
+%\usepackage{eurofont}
+\usepackage{verbatim}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+%\usepackage{setspace}
+% Set your name here
+\def\name{Prashant Anantharaman}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{https://prashant.at}
+
+%Add in-line comments
+\newcommand{\ignore}[1]{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {population genetics, maize, plant evolution},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+%\ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+%ADDRESS
+\begin{minipage}{0.55\linewidth}
+    \href{}{Master's Candidate,}\\
+  \href{}{Department of Computer Science,}\\
+  \href{}{Dartmouth College, NH, USA.}\\
+\end{minipage}
+\begin{minipage}{0.35\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (510) 904-8439 \\
+    Email: & \href{mailto:lists@prashant}{lists@prashant.at} \\
+    Web: & \href{https://prashant.at}{https://prashant.at}, \href{http://www.twitter.com/prashantbarca/}{@prashantbarca} \\
+  \end{tabular}
+\end{minipage}
+
+%EDUCATION
+\section*{Education}
+\begin{itemize}
+\setlength\itemsep{0.5ex}
+\item \textit{Master of Science} in Computer Science -- August 2015 -- June 2017\\\textbf{Dartmouth College}, NH, USA.\\
+    \textit{Research Area}: Systems Security\\
+    \textit{Advisors}: Dr. Sean W. Smith and Dr. Sergey Bratus
+\item \textit{Bachelor of Engineering} in Computer Science and Engineering -- August 2011 -- May 2015.\\ \textbf{College of Engineering Guindy}, Chennai, India\\
+    \textit{Research Area}: Compilers and Systems\\
+    \textit{Thesis}: Code Compaction in LLVM IR.\\
+    \textbf{TCS Best Senior Thesis Award.}\\
+    \textit{Thesis Advisor}: Dr. Arul Siromoney
+\end{itemize}
+
+\section*{Experience}
+\begin{itemize}
+\setlength\itemsep{0ex}
+\item \textbf{SRI International, Menlo Park, CA, USA} -- Internet-of-Things Security and Privacy Center\\
+    \textit{Student Associate.} Advisors: Dr. Michael Locasto, Dr. Gabriela Ciocarlie, Dr. Ulf Lindqvist.\\
+    Worked on an independent project to build \textit{Language-theoretic security} compliant clients for application layer Internet-of-Things protocols. 
+\item \textbf{Samsung R\&D Institute, Bangalore, India} -- Intelligent Search Team\\
+    \textit{Student Trainee.} Advisor: Mohan Sundar B.\\
+    Worked on an independent project of designing a graph searching system using Neo4J and Apache Giraph.
+\end{itemize}
+
+
+%\begin{comment}
+%INSTRUCTION & Advising
+%PUBS
+\section*{Publications}
+
+
+%SUBMITTED
+\subsection*{Preprints}
+\begin{itemize}
+    \item {\bf P. Anantharaman}, M. Locasto, G. Ciocarlie, U. Lindqvist.\\
+        "Building hardened Internet-of-Things implementations using Language-theoretic Security"\\
+        IEEE Symposium on Security and Privacy -- Language-theoretic Security Workshop.\\
+        May 2017 (Submitted)
+\end{itemize}
+
+%PRINT/PRESS
+\subsection*{Conferences and Workshops} %don't edit below line on H-index, use script instead
+
+\begin{etaremune}
+\setlength\itemsep{0ex}
+\item {\bf P. Anantharaman}, K. Palani, D. Nicol, S.W. Smith.\\
+    "I am Joe's Fridge: Scalable Identity in the Internet of Things"\\
+    IEEE International Conference on Internet of Things.\\
+    December 2016.
+\item G. Ramakrishnan, {\bf P. Anantharaman}, and S. Mukherjee.\\
+    "Proactive Resource Provisioning Model for Cloud Federation."\\
+    International Conference on Distributed Computing and Internet Technology. Springer International Publishing,\\
+    January 2016.
+\end{etaremune}
+
+\subsection*{Posters}
+
+\begin{etaremune}
+\setlength\itemsep{0ex}
+\item \textbf{P. Anantharaman}, J. P. Brady, S. Bratus, I. R. Jenkins, M. Millian, D.M. Nicol, K. Palani, E. Reed, S.W. Smith\\
+    "Increasing Cyber-Resilience of Large-Scale and Long-Lived Energy Delivery Infrastructure (EDI)"\\
+    2nd CREDC Industry Workshop ,Tempe, AZ\\
+    March 2017
+
+
+\item \textbf{P. Anantharaman}, D.M. Nicol, K. Palani, E. Reed, S. W. Smith\\
+    "Scalable Identity in the Smart Grid"\\
+    2nd CREDC Industry Workshop ,Tempe, AZ\\
+    March 2017
+\item  K. Palaki, {\bf P. Anantharaman}, D.M. Nicol, S. W. Smith\\
+    "Namespace and Cryptographic Complexities in the Smart Grid"\\
+    1st CREDC Industry Workshop ,Champaign, IL\\
+    March 2016
+\end{etaremune}
+
+\section*{Teaching Experience}
+\begin{itemize}
+\setlength\itemsep{0ex}
+\item Teaching Assistant for \textit{Programming Languages (COSC 59)}, September 2016-- November 2016.
+		\subitem Fall 2016 (1 lecture). Instructor -- Dr. Sergey Bratus.
+\item \textit{Ruby on Rails} Instructor at FSFTN Summer Camp, June 2015.
+    \subitem Number of Participants: 120.
+    \subitem Venue: IIT Madras.
+\end{itemize}
+
+
+%SEMINARS
+\section*{Talks and Presentations}
+\begin{itemize}
+\setlength\itemsep{0ex}
+\item \textit{Building vertically hardened Industrial-Control-Systems applications using Language-theoretic security}\\ 2nd CREDC Industrial Workshop\\ Tempe, AZ\\ March 28th 2017.
+\item \textit{Scalability Identity in the Internet of Things}\\ IEEE International Conference on Internet of Things\\ Chengdu, China\\ December 18th 2016.
+\end{itemize}
+
+%AWARDS
+\section*{Selected Fellowships and Awards}
+\setlength\itemsep{0ex}
+\begin {itemize}
+\setlength\itemsep{0ex}
+\item 50\% fee scholarship for first year of masters at Dartmouth College. 
+\item TCS Award for Best Senior Thesis -- 2015
+\end{itemize}
+
+\end{document}
