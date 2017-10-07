@@ -1,0 +1,111 @@
+\documentclass[]{mcdowellcv}
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{color}
+% Set applicant's personal data for header
+\name{Prashant Anantharaman}
+\address{6211 Sudikoff lab,\linebreak Dartmouth College, \linebreak Hanover, NH, 03755.}
+\contacts{(510) 904-8439
+\linebreak {\color{NavyBlue}{https://prashant.at}} \linebreak prashant.anantharaman.gr@dartmouth.edu}
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\color{NavyBlue}\normalfont\Large\bfseries}
+{\color{NavyBlue}\thesection}{1em}{}
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+ \begin{cvsection}{Education}
+		\begin{cvsubsection}
+%         {Hanover, NH}{Dartmouth College}{Fall 2015 -- Dec 2017}
+{}{}{}
+			\begin{itemize}
+				\item Ph.D. in Computer Science, \textbf{Area: Systems and Network Security, \textit{\color{ForestGreen}  Dartmouth College}}\\ Expected graduation: June 2021.
+				\item M.S. in Computer Science, \textbf{\textit{\color{ForestGreen}  Dartmouth College}}, June 2017. 
+				\item B.E. in Computer Science and Engineering, \textbf{\textit{\color{ForestGreen} College of Engineering Guindy, Chennai, India}}, May 2015.
+              
+				\item  Graduate Coursework: Computer Networks, Operating Systems, Security and Privacy, Artificial Intelligence, Principles of Programming Languages, Advanced Operating Systems, Advanced Readings on Computer Networks, Introduction to HCI, Research Topics in HCI, Bioinformatics.
+                \item Undergraduate Coursework: Object-oriented Approach and Programming, Design and Analysis of Algorithms, Database Management Systems, Compilers, System Software Internals.
+			
+			
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+    	\begin{cvsection}{Programming Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item  Ruby, Ruby on Rails, Java, Android, SQL, C, C++, HTML, CSS, Javascript, Python.
+				\item  MySQL, Android Studio, Wireshark, GNU/LINUX, Alloy Model Checker.
+% 				\item \textbf{Software Packages :} Microsoft SQL Server, Microsoft Visual Studio, Eclipse, Adobe AfterEffects.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}	
+
+
+
+    	\begin{cvsection}{Talks and Presentations (Selected)}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Input Handling Done Right: Building Hardened Parsers using Language-theoretic Security}, IEEE Cybersecurity Development Conference, Boston, MA. \textit{September 24th, 2017.} 
+				\item \textbf{I am Joe's Fridge: Scalable Identity in the Internet of Things}, IEEE Conference on Internet of Things, Chengdu, China. \textit{December 18th, 2016.}
+% 				\item \textbf{Software Packages :} Microsoft SQL Server, Microsoft Visual Studio, Eclipse, Adobe AfterEffects.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}	
+
+% \begin{cvsection}{CourseWork}
+% \begin{cvsubsection}{}{}{}	
+% 			\begin{itemize}
+% 				\item  \textbf{Graduate Coursework :} Artificial Intelligence, Computer Vision,  Security and Privacy, Research in Human Computer Interaction, Principles of Programming Languages, Smartphone Programming.
+%                 \item \textbf{Undergraduate Coursework :} Object-oriented Approach and Programming, Design and Analysis of Algorithms, Probability and Statistics, Operating Systems, Computer Networks, Database Management Systems.
+% 			\end{itemize}
+% 		\end{cvsubsection}
+% 	\end{cvsection}	
+\begin{cvsection}{Employment}
+\begin{cvsubsection}{Student Associate}{SRI International, Menlo Park}{\textit{June 2017 -- September 2017}}			
+			\begin{itemize}
+				\item Designing composite-metrics for understanding security of Internet-of-Things ecosystems.
+			\end{itemize}
+		\end{cvsubsection}
+        \begin{cvsubsection}{Student Associate}{SRI International, Menlo Park}{\textit{June 2016 -- September 2016}}			
+			\begin{itemize}
+				\item Building Language-Theoretic Security compliant clients for Internet-of-Things protocols.
+				\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Student Trainee}{Samsung R\&D Institute, Bangalore, India}{\textit{May 2013 -- July 2013}}			
+			\begin{itemize}
+				\item Designing a graph searching system using Neo4J and Apache Giraph for largescale Internet-of-Things networks.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+                \item \textbf{KeggyFuzzer: }Building smart fuzzers from parser-combinator input. A top-down fuzzer generator generating and mutating inputs to detect input not accepted by grammar. \textit{C, Ruby}.
+                \item \textbf{DARPA RADICS:} Contributing to the active development of the TIGR system, being used in the power grid restoration project. We provide information about potential attacks and provide suggestions for defense mechanisms to grid operators.
+			    \item \textbf{Snap-in Conduits: } Dynamically patching legacy devices with vulnerable or outdated binaries. We insert a layer of parser code to prevent input-validation exploitations ranging from buffer-overflows to malformed packets.
+				\item \textbf{Cyber-physical attack paths:} We used the alloy model-checker to find attack paths in Internet-of-Things networks. These attack paths are not only in the cyber channels, but also physical attributes of devices influencing other devices. \textit{Alloy Model Checker}.
+				\item \textbf{Building LangSec Compliant protocol clients:} We have so far built implementations of the MQTT, XMPP, DNP3 and C37.118 protocols. All of which are used in the Industrial IoT and Smart Grid. Our implementations are presently being used actively in the power grid by several vendors.
+                %\item \textbf{Kabali:} Developed a tool to visualize ruby YARV structures, and to  traverse through them step by step by tracing the state of the stack at each move at Dartmouth College. \textit{(Ruby).}
+				%\item \textbf{The Guindy Times Website:} Developed the website, Android application and the entire API for my undergraduate college campus newspaper. \textit{(Ruby on Rails, Android, Java, CSS, Javascript, HTML)}
+
+
+% (Team of three)..
+
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+                \item Received a full scholarship for my second year of M.S., and 50\% scholarship for my first year.
+				\item TCS Award for best senior thesis.
+				\item Best Dartmouth Hack - at HackDartmouth 2015.
+                \item Received citation for meritorious performance at Dartmouth College for developing internal visualization tools towards the course curriculum development for \textit{Programming languages}.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\end{document}

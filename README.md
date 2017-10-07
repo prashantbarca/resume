@@ -1,12 +1,6 @@
 CV
 ==
 
-### Curriculum Vitae for Jeffrey Ross-Ibarra
+There are two versions here - one is the long version with all talks, papers and projects. Another is the shorter HR version of resume.
 
-**update.sh**: uses [scholar](https://cran.r-project.org/web/packages/scholar/index.html) package from R (file h.r) to update H-Index and total citations, runs pdflatex to generate new pdf.
 
-**update.pl**: uses citation data from h.r to update citation counts in CV. embarassing perl code!
-
-**CV.temp.tex**: edit this one.
-
-**CV.tex**: cite/publish/use this one.
