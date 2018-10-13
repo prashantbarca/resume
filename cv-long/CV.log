@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.8)  12 OCT 2018 21:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.8)  12 OCT 2018 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,30 +355,50 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 192.
  [2]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 248.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 214.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+)
+Overfull \hbox (2.80524pt too wide) in paragraph at lines 214--215
+[]\T1/pplj/m/n/10 Dartmouth News -- Grad-u-ate Stu-dents Cre-ate Computer-Chip 
+Se-cu-rity Fix -- [][]$\T1/cmtt/m/n/10 https : / / news . dartmouth .
+ []
+
+
+Overfull \hbox (186.30121pt too wide) in paragraph at lines 215--216
+\T1/pplj/m/n/10 -- [][]$\T1/cmtt/m/n/10 https : / / www . bleepingcomputer . co
+m / news / security / academics-[]announce-[]new-[]protections-[]against-[]spec
+tre-[]and-[]rowhammer-[]attacks/$[][] 
+ []
+
+
+Overfull \hbox (280.24454pt too wide) in paragraph at lines 217--218
+\T1/pplj/m/n/10 tacks -- [][]$\T1/cmtt/m/n/10 https : / / it . slashdot . org /
+ story / 18 / 07 / 23 / 1613217 / academics-[]publish-[]new-[]software-[]level-
+[]protections-[]against-[]spectre-[]and-[]rowhammer-[]attacks$[][] 
+ []
+
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 5990 strings out of 492982
- 88003 string characters out of 6134896
- 175781 words of memory out of 5000000
+ 5991 strings out of 492982
+ 88014 string characters out of 6134896
+ 176781 words of memory out of 5000000
  9475 multiletter control sequences out of 15000+600000
  34237 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,64p,321b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,64p,317b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/f
@@ -386,10 +406,10 @@ pl/fplrij8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (4 pages, 102896 bytes).
+Output written on CV.pdf (4 pages, 106193 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
