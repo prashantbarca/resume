@@ -4,18 +4,33 @@
 
 
 \documentclass[letterpaper,10pt]{article}
+%\documentclass[11pt,letterpaper,sans]{moderncv}
 
+% moderncv themes
+%\moderncvstyle{casual}
+
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{dartmouthgreen}{RGB}{0, 105, 62}
+\definecolor{dartmouthgreencompl}{RGB}{10, 0, 105}
+\usepackage{amssymb}
+\usepackage{tabularx}% http://ctan.org/pkg/tabularx
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
 \usepackage{geometry}
-\usepackage{etaremune}
+\usepackage{enumitem}
+\usepackage{longtable}
+%\usepackage{enumerate}
+%\usepackage{enumerate}
 %\usepackage{eurofont}
 \usepackage{verbatim}
+\usepackage{soul}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
 %\usepackage{setspace}
 % Set your name here
 \def\name{Prashant Anantharaman}
@@ -24,24 +39,26 @@
 % (as in \def\footerlink{}) to remove the link in the footer:
 \def\footerlink{https://prashant.at}
 
+\setul{1pt}{.4pt}
+
 %Add in-line comments
 \newcommand{\ignore}[1]{}
 
 % The following metadata will show up in the PDF properties
 \hypersetup{
-	colorlinks = true,
-	urlcolor = blue,
-	pdfauthor = {\name},
-	pdfkeywords = {population genetics, maize, plant evolution},
-	pdftitle = {\name: Curriculum Vitae},
-	pdfsubject = {Curriculum Vitae},
-	pdfpagemode = UseNone
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {IoT Security},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
 }
 
 \geometry{
-	body={6.5in, 9in},
-	left=1.0in,
-	top=1.0in
+  body={6.8in, 9.2in},
+  left=0.8in,
+  top=0.8in
 }
 
 % Customize page headers
@@ -51,8 +68,10 @@
 
 % Custom section fonts
 \usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
+\sectionfont{\large}
+\subsectionfont{\itshape}
+%\sectionfont{\rmfamily\mdseries\large}
+%\subsectionfont{\rmfamily\mdseries\itshape}
 
 % Other possible font commands include:
 %\ttfamily for teletype,
@@ -65,244 +84,461 @@
 \setlength\parindent{0em}
 
 % Make lists without bullets
-\renewenvironment{itemize}{
-	\begin{list}{}{
-			\setlength{\leftmargin}{1.5em}
-		}
-	}{
-	\end{list}
-}
+%\renewenvironment{itemize}{
+  %\begin{list}{}{
+      %\setlength{\leftmargin}{1.5em}
+      %}
+      %}{
+  %\end{list}
+%}
 
 \begin{document}
 
 % Place name at left
-{\huge \name}
 
 % Alternatively, print name centered and bold:
 %\centerline{\huge \bf \name}
 
-\vspace{0.25in}
+%\vspace{0.1in}
 
 %ADDRESS
-\begin{minipage}{0.55\linewidth}
-	\href{}{Doctor of Philosophy (Ph.D.) Candidate,}\\
-	\href{}{Department of Computer Science,}\\
-	\href{}{Dartmouth College, NH, USA.}\\
+\begin{minipage}{\linewidth}
+  \centering
+{\Large \textsc{\name}} \mbox{}\hfill \\
+  Doctor of Philosophy (Ph.D.) Candidate,\\
+  Department of Computer Science,\\
+  Dartmouth College, NH, USA.\\
+  \begin{tabular}{ll}
+    Phone: & (510) 904-8439 \\
+    Email: & \texttt{pa@cs.dartmouth.edu} \\
+    Web: & \url{https://prashant.at} \\
+    Google Scholar: & \url{https://prashant.at/gscholar}\\
+    LinkedIn: & \url{https://linkedin.com/in/prashant-a}\\
+    Github account: & \url{https://github.com/prashantbarca}
+  \end{tabular}
 \end{minipage}
-\begin{minipage}{0.35\linewidth}
-	\begin{tabular}{ll}
-		Phone: & (510) 904-8439 \\
-		Email: & \href{mailto:lists@prashant}{lists@prashant.at} \\
-		Web: & \href{https://prashant.at}{https://prashant.at}, \href{http://www.twitter.com/prashantbarca/}{@prashantbarca} \\
-	\end{tabular}
-\end{minipage}
+
+\vspace{0.35cm}
+
+\hrule
+
+
 
 %EDUCATION
-\section*{Education}
+\section*{\color{dartmouthgreen} Education}
 \begin{itemize}
-	\setlength\itemsep{0.5ex}
-	\item \textit{Doctor of Philosophy (Ph.D.)} in Computer Science --  June 2017 -- \\\textbf{Dartmouth College}, NH, USA.\\
-		\textit{Research Area}: Systems Security\\
-		\textit{Advisors}: Dr. Sean W. Smith and Dr. Sergey Bratus
-	\item \textit{Master of Science} in Computer Science -- August 2015 -- June 2017\\\textbf{Dartmouth College}, NH, USA.\\
-		\textit{Research Area}: Systems Security\\
-		\textit{Advisors}: Dr. Sean W. Smith and Dr. Sergey Bratus
-	\item \textit{Bachelor of Engineering} in Computer Science and Engineering -- August 2011 -- May 2015.\\ \textbf{College of Engineering Guindy}, Chennai, India\\
-		\textit{Research Area}: Compilers and Systems\\
-		\textit{Thesis}: Code Compaction in LLVM IR.\\
-		\textbf{TCS Best Senior Thesis Award.}\\
-		\textit{Thesis Advisor}: Dr. Arul Siromoney
+  \setlength\itemsep{0.5ex}
+  \item \textbf{Doctor of Philosophy (Ph.D.)} in Computer Science \mbox{}\hfill \textbf{June~2022~(Expected)}\\
+    \textit{Dartmouth College}, NH, USA\\
+    \textit{Research Area}: Securing Data Formats, Formally Verified Parsers\\
+    \textit{Thesis}: Protecting Systems from Exploits using Language-theoretic Security\\
+    \textit{Advisors}: Dr. Sean W. Smith and Dr. Sergey Bratus
+  \item \textbf{Master of Science} in Computer Science \mbox{}\hfill \textbf{June 2017}\\
+    \textit{Dartmouth College}, NH, USA.\\
+    \textit{Research Area}: Internet of Things and Power Grid Security\\
+    \textit{Advisors}: Dr. Sean W. Smith and Dr. Sergey Bratus
+  \item \textbf{Bachelor of Engineering} in Computer Science and Engineering \mbox{}\hfill \textbf{May 2015}\\ 
+    \textit{College of Engineering Guindy}, Chennai, India\\
+    \textit{Research Area}: Compilers and Systems\\
+    \textit{Thesis}: Code Compaction in LLVM IR.\\
+    \textbf{TCS Best Senior Thesis Award.}\\
+    \textit{Advisor}: Dr. Arul Siromoney
 \end{itemize}
 
-\section*{Experience}
+\hrule
+\section*{\color{dartmouthgreen} Research Interests -- Social Aspects of Privacy, Internet of Things (IoT)}
+
 \begin{itemize}
-	\setlength\itemsep{0ex}
-	\item \textbf{SRI International, New York, NY, USA} -- Internet-of-Things Security and Privacy Center\\
-		June 2018 -- September 2018
-		\textit{Student Associate.} \\ Advisors: Dr. Michael Locasto, Dr. Gabriela Ciocarlie, Dr. Ulf Lindqvist.\\
-		Device identification and fingerprinting in Internet-of-Things networks using clustering.
-	\item \textbf{SRI International, Menlo Park, CA, USA} -- Internet-of-Things Security and Privacy Center\\
-		June 2017 -- September 2017
-		\textit{Student Associate.} \\ Advisors: Dr. Bogdan Copos, Dr. Michael Locasto, Dr. Ulf Lindqvist.\\
-		Designing \textit{composite-metrics} for understanding security of Internet-of-Things ecosystems.
-	\item \textbf{SRI International, Menlo Park, CA, USA} -- Internet-of-Things Security and Privacy Center\\
-		June 2016 -- September 2016
-		\textit{Student Associate.} \\ Advisors: Dr. Michael Locasto, Dr. Gabriela Ciocarlie, Dr. Ulf Lindqvist.\\
-		Building \textit{Language-theoretic security} compliant clients for application layer Internet-of-Things protocols.
-	\item \textbf{Samsung R\&D Institute, Bangalore, India} -- Intelligent Search Team\\
-		May 2013 -- July 2013\\
-		\textit{Student Trainee.} \\ Advisor: Mohan Sundar B.\\
-		Worked on an independent project of designing a graph searching system using Neo4J and Apache Giraph.
+  \item[--] Conduct Vignette studies (on mTurk and via interviews) to better inform security and privacy decisions and policy
+  \item[--] Understand privacy attitudes of users towards various types of IoT devices
+  \item[--] Protect IoT devices and their users from exploits by building \textit{secure} and \textit{safe} software
 \end{itemize}
 
-\section*{Current Projects}
+My main contributions so far have been in the fields of (a) Language-theoretic Security: building new parsing methodologies and demonstrating them on various network formats and file formats, (b) Internet of Things: Behavioral analysis of various commercial IoT devices.
+
+\vspace{0.5cm}
+\hrule
+
+\section*{\color{dartmouthgreen} Highlights}
+
 \begin{itemize}
-	\setlength\itemsep{0ex}
-	\item Verified Parser Generators for File Formats
-	\item IoTHound: Environment-agnostic Device Characterization, Identification, and Monitoring
-	\item Macaroon-based Key Management Scheme for Publish-subscribe Systems
+  \item \textbf{Publications:} \ul{15+} peer-reviewed papers in top conferences and journals (IoT, NSPW, SPW, IEEE S\&P)
+  \item \textbf{Awards:} \ul{Best Paper Award} and \ul{Best Paper Award Nomination} at ACM IoT Conference, TCS Best Senior Thesis Award, Dartmouth Graduate Student Scholarship
+  \item \textbf{Service:} \ul{TPC} and \ul{Reviewer} at top-tier IEEE and ACM journals and conferences (WF-IoT, IEEE/ACM Networking, LangSec)
+  \item \textbf{Collaborations:} Multiple ongoing and past collaborations with \ul{Industry} (SRI International, Narf Industries, GE Research) and \ul{universities} (UIUC, NYU) funded by the \ul{US DoE} and \ul{DARPA}
 \end{itemize}
 
-%SEMINARS
-\section*{Talks and Presentations}
+\hrule
+
+\section*{\color{dartmouthgreen} Experience}
 \begin{itemize}
-	\setlength\itemsep{0ex}
-	\item \textit{PhasorSec: Protocol Security Filters for Wide Area Measurement Systems} \\ IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids \\ Aalborg, Denmark \\ October 29th, 2018
-	\item \textit{Ghostbusters: A tale of ELF, ABI and Spectre} \\ BSidesAugusta\\ Augusta, GA \\ September 20th, 2018
-	\item \textit{Going Dark: A Retrospective on the Blackout of 2038} \\ New Security Paradigms Workshop \\ Windsor, UK \\ August 28th, 2018
-	\item \textit{LangSec for Critical Infrastructure: SSP21, a secure lightweight SCADA protocol} \\ 5th LangSec Workshop at IEEE Symposium on Security and Privacy (Oakland)\\ San Francisco, CA\\ May 24th, 2018
-	\item \textit{Input Handling Done Right: Building Hardened Parsers using Language-theoretic Security} \\ IEEE Cybersecurity Development Conference\\ Boston, MA\\ September 24th 2017
-	\item \textit{Building Hardened Internet-of-Things Clients using Language-Theoretic Security}\\ 4th LangSec Workshop at IEEE Symposium on Security and Privacy (Oakland)\\ San Jose, CA\\ May 25th 2017
-	\item \textit{Building vertically hardened Industrial-Control-Systems applications using Language-theoretic security}\\ 2nd CREDC Industrial Workshop\\ Tempe, AZ\\ March 28th 2017
-	\item \textit{Scalability Identity in the Internet of Things}\\ IEEE International Conference on Internet of Things\\ Chengdu, China\\ December 18th 2016
+  \setlength\itemsep{0ex}
+  \item \textbf{Student Research Associate} \mbox{}\hfill\textbf{June 2018 -- September 2018}\\
+  \textit{IoT Security and Privacy Center, SRI International, New York, NY, USA}\\
+  %\item \textbf{SRI International, New York, NY, USA} -- Internet-of-Things Security and Privacy Center\\
+    Advisors: Dr. Michael Locasto, Dr. Gabriela Ciocarlie, Dr. Ulf Lindqvist.\\
+    Research: Device identification and fingerprinting in Internet-of-Things networks using clustering.
+  
+  \item \textbf{Student Research Associate} \mbox{}\hfill\textbf{June 2017 -- September 2017}\\
+  \textit{IoT Security and Privacy Center, SRI International, Menlo Park, CA, USA}\\
+    Advisors: Dr. Bogdan Copos, Dr. Michael Locasto, Dr. Ulf Lindqvist.\\
+    Research: Designing \textit{composite-metrics} to understand the security of Internet-of-Things ecosystems.
+
+  \item \textbf{Student Research Associate} \mbox{}\hfill\textbf{June 2016 -- September 2016}\\
+  \textit{IoT Security and Privacy Center, SRI International, Menlo Park, CA, USA}\\
+    Advisors: Dr. Michael Locasto, Dr. Gabriela Ciocarlie, Dr. Ulf Lindqvist.\\
+    Research: Building \textit{Language-theoretic security} compliant clients for application layer Internet-of-Things protocols.
+
+    \item \textbf{Student Trainee/Intern}\mbox{}\hfill\textbf{May 2013 -- July 2013}\\
+  \textit{Samsung R\&D Institute, Bangalore, India -- Intelligent Search Team}\\
+    Advisor: Mohan Sundar B.\\
+    Research: Designing a graph searching system using Neo4J and Apache Giraph.
 \end{itemize}
+
+
+\hrule
+
+
+\section*{\color{dartmouthgreen} Current Projects}
+\begin{itemize}
+  \setlength\itemsep{0ex}
+  \item Expert elicitation study to understand desired features in data description languages: A qualitative study to derive expert-desired properties using the Delphi Method (interviewed 20 experts)
+  \item An mTurk study examining how users evaluate URLs: A large-scale (over 1100 participants hired on mTurk) quantitative study to determine what are some unsafe URL structures to which users are most susceptible
+  \item Verified parser generators for file formats using Dafny
+  \item FPGA-based parsers using Dafny and VHDL to validate and serialize parsers at line-speed
+  \item Traffic validator for Smart Grid networks using Language-theoretic Security
+\end{itemize}
+
 
 %\begin{comment}
 %INSTRUCTION & Advising
 %PUBS
-	\section*{Publications}
+\vspace{0.5cm}
+\hrule
 
 
-	%% %SUBMITTED
-	%% \subsection*{Preprints}
-	%% \begin{itemize}
-	%% \end{itemize}
-
-	%PRINT/PRESS
-	\subsection*{Conferences and Workshops} %don't edit below line on H-index, use script instead
-
-	\begin{etaremune}
-	\setlength\itemsep{0ex}
-
-	\item {\bf Prashant Anantharaman}, Kartik Palani, Rafael Brantley, Galen Brown, Sergey Bratus, Sean W. Smith\\
-		"PhasorSec: Protocol Security Filters for Wide Area Measurement Systems"\\
-		IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids, Aalborg, Denmark\\
-		October 29-31, 2018
-
-	\item {\bf Prashant Anantharaman}, J. Peter Brady, Patrick Flathers, Vijay H. Kothari, Michael C. Millian, William G. Nisen, Jason Reeves, Nathan Reitinger, Sean W. Smith.\\
-		"Going Dark: A Retrospective on the North American Blackout of 2038"\\
-		New Security Paradigms Workshop (NSPW '18), Windsor, UK\\
-		August 28-31, 2018
-
-	\item Ioannis Agadakos*, Chien-Ying Chen*, Matteo Campanelli*, {\bf Prashant Anantharaman*}, Monowar Hasan*, Bogdan Copos*, Tancrede Lepoint, Michael Locasto, Gabriela F. Ciocarlie, Ulf Lindqvist \\
-		\textit{* Equal Contributions}\\
-		"Jumping the Air Gap: Modeling Cyber-Physical Attack Paths in the Internet-of-Things" \\
-		 3rd ACM CCS Cyber-Physical Systems Security and Privacy Workshop \\
-		 November 2017
-	 \item {\bf Prashant Anantharaman}, Michael M. Millian, Sergey Bratus, Meredith L. Patterson.\\
-		 "Input Handling Done Right: Building Hardened Parsers using Language-theoretic Security"\\
-		 2nd IEEE Cybersecurity Development Conference, Boston, MA\\
-		 September 2017
-
-	 \item {\bf P. Anantharaman}, M. Locasto, G. Ciocarlie, U. Lindqvist.\\
-		 "Building hardened Internet-of-Things implementations using Language-theoretic Security"\\
-				IEEE Symposium on Security and Privacy -- Language-theoretic Security Workshop.\\
-				May 2017
-			\item {\bf P. Anantharaman}, K. Palani, D. Nicol, S.W. Smith.\\
-				"I am Joe's Fridge: Scalable Identity in the Internet of Things"\\
-		IEEE International Conference on Internet of Things.\\
-		December 2016
-	\item G. Ramakrishnan, {\bf P. Anantharaman}, and S. Mukherjee.\\
-		"Proactive Resource Provisioning Model for Cloud Federation."\\
-		International Conference on Distributed Computing and Internet Technology.\\
-		January 2016
-	\end{etaremune}
-
-	\section*{Press and News Coverage}
-
-	\begin{itemize}
-		\item Dartmouth News -- Graduate Students Create Computer-Chip Security Fix -- \url{https://news.dartmouth.edu/news/2018/10/graduate-students-create-computer-chip-security-fix}
-		\item Bleeping Computer -- Academics Announce New Protections Against Spectre and Rowhammer Attacks -- \url{https://www.bleepingcomputer.com/news/security/academics-announce-new-protections-against-spectre-and-rowhammer-attacks/}
-		\item The Register -- Spectre rises from the dead to bite Intel in the return stack buffer -- \url{https://www.theregister.co.uk/2018/07/23/spectre\_return\_stack\_buffer/}
-		\item SlashDot -- Academics Publish New Software-Level Protections Against Spectre and Rowhammer Attacks -- \url{https://it.slashdot.org/story/18/07/23/1613217/academics-publish-new-software-level-protections-against-spectre-and-rowhammer-attacks}
-
-	\end{itemize}
-
-	%% \subsection*{Posters}
-
-	%% \begin{etaremune}
-	%% \setlength\itemsep{0ex}
-	%% \item \textbf{P. Anantharaman}, J. P. Brady, S. Bratus, I. R. Jenkins, M. Millian, D.M. Nicol, K. Palani, E. Reed, S.W. Smith\\
-	%%     "Increasing Cyber-Resilience of Large-Scale and Long-Lived Energy Delivery Infrastructure (EDI)"\\
-	%%     2nd CREDC Industry Workshop ,Tempe, AZ\\
-	%%     March 2017
-
-	%% \item \textbf{P. Anantharaman}, D.M. Nicol, K. Palani, E. Reed, S. W. Smith\\
-	%%     "Scalable Identity in the Smart Grid"\\
-	%%     2nd CREDC Industry Workshop ,Tempe, AZ\\
-	%%     March 2017
-	%% \item  K. Palani, {\bf P. Anantharaman}, D.M. Nicol, S. W. Smith\\
-	%%     "Namespace and Cryptographic Complexities in the Smart Grid"\\
-	%%     1st CREDC Industry Workshop ,Champaign, IL\\
-	%%     March 2016
-	%% \end{etaremune}
-
-\section*{Teaching Experience}
-\begin{itemize}
-	\setlength\itemsep{0ex}
-	\item Teaching Assistant for \textit{Programming Languages (COSC 59)}, September 2016-- November 2016.
-		\subitem Fall 2016 (1 lecture). Instructor -- Dr. Sergey Bratus.
-	\item \textit{Ruby on Rails} Instructor at FSFTN Summer Camp, June 2015.
-		\subitem Number of Participants: 120.
-		\subitem Venue: IIT Madras.
-\end{itemize}
+\section*{\color{dartmouthgreen} Publications}
 
 
+%% %SUBMITTED
+%% \subsection*{Preprints}
+%% \begin{itemize}
+%% \end{itemize}
 
-\section*{Projects}
-\subsection*{Hackathon Projects (Available on GitHub)}
-\begin{itemize}
-	\setlength\itemsep{0ex}
-	\item \textit{FoodRoach:} Locating the nearest location on campus providing free-food at a particular point of time. Software(s) used: \textsl{Ruby on Rails, Android}. \\ {\bf Winner - Best Dartmouth Hack.}
-	\item \textit{File Sharing Portal:} Developed a "Social Network for sharing of Files and Videos". Software(s) used: \textsl{Ruby on Rails, mysql}.
-	\item \textit{Guindy Times Website:} Developed the website and API for the college news magazine. \url{http://guindytimes.com}. Software(s) used: \textsl{Ruby on Rails, postgresql, Redis}
-	\item \textit{Kurukshetra : College Tech Fest Website:} Developed the website of the college tech fest. Developed the website and the API for the android application. \url{http://archive15.kurukshetra.org.in}. Software(s) used: \textsl{Ruby on Rails, mysql, angularjs}
-\end{itemize}
+%PRINT/PRESS
 
-
-\subsection*{Research Projects}
-
-\begin{itemize}
-	\setlength\itemsep{0ex}
-
-	\item \textit{DARPA RADICS:} Building hardened parsers and setpoint monitoring capabilities for industrial control systems.
-
-	\item \textit{KeggyFuzzer:} Building smart fuzzers from parser-combinator input. We build a top-down fuzzer generator.
-
-	\item \textit{Tamil OCR and Error Correction:} This project was funded by "Centre for Technology Development and Transfer, Anna University". Error corrections were made on an OCRed document. We achieved an accuracy of almost 90\%. Software(s) used: \textsl{Java,Ruby on Rails, Tesseract OCR}
-
-\end{itemize}
+\subsection*{\color{dartmouthgreen} Book Chapters}
+\begin{enumerate}[label={B\arabic*.}]
+  \setlength\itemsep{0ex}
 
 
-\subsection*{Academic Projects}
-\begin{itemize}
-	\setlength\itemsep{0ex}
-	\item \textit{Kabali:} A ruby gem to inspect the YARV structures. Ruby YARV structures and stacks aren't so easy to inspect and comprehend, this gem would give you a step by step description of the modifications in the stack. {\bf Received a citation for this project.}
-	\item \textit{Sankalan:} A ruby gem to make mdb and dtrace interchangeably.
-	\item \textit{Yalnix:} A simple operating system in C. Implemented memory management and all syscalls as a part of the Operating Systems course.
+  \item {\bf Prashant Anantharaman} et al.\\
+    ``Intent as a Secure Design Primitive''\\
+    Modeling and Design of Secure Internet of Things\\
+    John Wiley and Sons, Inc.\\
+    DOI: \url{https://doi.org/10.1002/9781119593386.ch23}
 
-\end{itemize}
+  \item  I. Agadakos, {\bf Prashant Anantharaman} et al. \\
+    ``Securing Smart Cities: Implications and Challenges''\\
+    Modeling and Design of Secure Internet of Things\\
+    John Wiley and Sons, Inc.\\
+    DOI: \url{https://doi.org/10.1002/9781119593386.ch9}
 
 
-\section*{Programing Environments}
+\end{enumerate}
+
+\subsection*{\color{dartmouthgreen} Patents}
+\begin{enumerate}[label={P\arabic*.}]
 \setlength\itemsep{0ex}
-	\begin {itemize}
+\item Gabriela F Ciocarlie, Ioannis Agadakos, Chien-Ying Chen, Matteo Campanelli, {\bf Prashant Anantharaman}, Monowar Hasan, Ulf Lindqvist, Michael Locasto, Bogdan Copos, Tancrède Lepoint, Matthew Filippone \\
+  ``Modeling cyber-physical attack paths in the internet-of-things'' \\
+  2020/5/21: US Patent number 16634591
+\end{enumerate}
+
+\subsection*{\color{dartmouthgreen} Magazine Articles}
+\begin{enumerate}[label={M\arabic*.}]
 \setlength\itemsep{0ex}
-\item Languages: C++, C, Java, Python, Ruby, HTML/CSS
-\item Plaforms: Unix (Linux, Solaris)
-\item Tools: Wireshark, Git version control, Emacs and vim text editors
-\item Databases: Mysql, Postgresql, Oracle
-\item Frameworks: Ruby on Rails, Django, LLVM, Hammer parser-combinator
-\item Github account: https://github.com/prashantbarca
+  \item Sameed Ali, {\bf Prashant Anantharaman}, Zephyr S. Lucas and Sean W. Smith\\
+``What We Have Here Is Failure to Validate: Summer of LangSec.''\\
+IEEE Security and Privacy\\May/June 2021\\
+DOI: \url{https://doi.org/10.1109/MSEC.2021.3059167}
+\end{enumerate}
+
+\subsection*{\color{dartmouthgreen} Conferences and Workshops} %don't edit below line on H-index, use script instead
+
+\begin{enumerate}[label={C\arabic*.}]
+\setlength\itemsep{0ex}
+
+\item Zephyr S. Lucas, Joanna Liu, {\bf Prashant Anantharaman}, Sean W. Smith \\
+  ``Pegmatite: Parsing PEGs with Length Fields in Software and Hardware''\\
+  Seventh Language-theoretic Security (LangSec) IEEE Security and Privacy Workshop, Virtual.\\
+  May 2021\\
+  DOI: \url{https://doi.org/10.1109/SPW53761.2021.00026}
+
+\item  {\bf Prashant Anantharaman}*, Liwei Song*, Ioannis Agadakos, Bogdan Copos, Gabriela Ciocarlie, Ulf Lindqvist, Michael E. Locasto \\
+  ``IoTHound: Environment-agnostic Device Identification and Monitoring'' \\
+  10th International Conference on the Internet of Things (IoT 2020), Malmo, Sweden \\
+  $\bigstar$ \textit{Best Paper Award (Top 1 paper out of 84 submitted papers)} \\
+  October 6-9th, 2020. \\
+  \textit{*Equal Contributions}\\
+  DOI: \url{https://doi.org/10.1145/3410992.3410993}
+\item    S. Ali, {\bf Prashant Anantharaman} and S.W. Smith  \\
+  ``Armor Within: Defending against Vulnerabilities in Third-Party Libraries'' \\
+  Sixth Language-theoretic Security (LangSec) IEEE Security and Privacy Workshop \\
+  May 2020.\\
+  DOI: \url{https://doi.org/10.1109/SPW50608.2020.00063}
+\item P. Mundkur, {\bf Prashant Anantharaman}, S. Ali, L. Briesemeister, N. Shankar and S.W. Smith. \\
+  ``The Parsley Data Format Definition Language'' \\
+  Sixth Language-theoretic Security (LangSec) IEEE Security and Privacy Workshop. \\
+  May 2020.\\
+  DOI: \url{https://doi.org/10.1109/SPW50608.2020.00064}
+\item I.R. Jenkins, {\bf Prashant Anantharaman}, R. Shapiro, J.P. Brady, S. Bratus and S.W. Smith. \\
+  ``Ghostbusting: Mitigating Spectre with Intraprocess Memory Isolation'' \\
+  7th Annual Symposium and Bootcamp on Hot Topics in the Science of Security (HotSoS '20). \\
+  April 2020.\\
+  DOI: \url{https://doi.org/10.1145/3384217.3385627}
+
+
+\item {\bf Prashant Anantharaman}, Kartik Palani, Sean W. Smith \\
+  ``Scalable Identity and Key Management for Publish-Subscribe Protocols in the Internet-of-Things'' \\
+  9th International Conference on Internet of Things (IoT 2019), Bilbao, Spain\\
+  October 22-25th, 2019.\\
+  $\bigstar$ \textit{Nominated for the Best Paper Award, and received an Honorable Mention Award for the Top 3 papers (Top 3 papers out of 84 submitted papers)}\\
+  DOI: \url{https://doi.org/10.1145/3365871.3365883}
+\item {\bf Prashant Anantharaman}, Vijay Kothari, J. Peter Brady, Ira Ray Jenkins, Sameed Ali, Michael C. Millian, Ross Koppel, Jim Blythe, Sergey Bratus, and Sean W. Smith\\
+  ``Mismorphism: The Heart of the Weird Machine''\\
+  Twenty-seventh International Workshop on Security Protocols, Trinity College, Cambridge, UK\\
+  April 12--14th, 2019.\\
+  DOI: \url{https://doi.org/10.1007/978-3-030-57043-9\_11}
+\item Vijay Kothari, {\bf Prashant Anantharaman}, J. Peter Brady, Ira Ray Jenkins, Sameed Ali, Michael C. Millian, Ross Koppel, Jim Blythe, Sergey Bratus, and Sean W. Smith\\
+  ``Human-Computability Boundaries''\\
+  Twenty-seventh International Workshop on Security Protocols, Trinity College, Cambridge, UK
+  April 12--14th, 2019.\\
+  DOI: \url{https://doi.org/10.1007/978-3-030-57043-9\_15}
+\item Michael C. Millian, {\bf Prashant Anantharaman}, Sergey Bratus, Sean W. Smith, Michael E. Locasto\\
+  ``Converting an Electric Power Utility Network to Defend Against Crafted Inputs''\\
+  Thirteenth Annual IFIP WG 11.10 International Conference on Critical Infrastructure Protection, Arlington, VA\\
+  March 11--12th, 2019.\\
+  DOI: \url{https://doi.org/10.1007/978-3-030-34647-8\_4}
+
+\item {\bf Prashant Anantharaman}, Kartik Palani, Rafael Brantley, Galen Brown, Sergey Bratus, Sean W. Smith\\
+  ``PhasorSec: Protocol Security Filters for Wide Area Measurement Systems''\\
+  IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids, Aalborg, Denmark\\
+  October 29-31, 2018.\\
+  DOI: \url{https://doi.org/10.1109/SmartGridComm.2018.8587501}
+
+\item {\bf Prashant Anantharaman}, J. Peter Brady, Patrick Flathers, Vijay H. Kothari, Michael C. Millian, William G. Nisen, Jason Reeves, Nathan Reitinger, Sean W. Smith.\\
+  ``Going Dark: A Retrospective on the North American Blackout of 2038''\\
+  New Security Paradigms Workshop (NSPW '18), Windsor, UK\\
+  August 28-31, 2018.\\
+  DOI: \url{https://doi.org/10.1145/3285002.3285011}
+
+\item Ioannis Agadakos*, Chien-Ying Chen*, Matteo Campanelli*, {\bf Prashant Anantharaman*}, Monowar Hasan*, Bogdan Copos*, Tancrede Lepoint, Michael Locasto, Gabriela F. Ciocarlie, Ulf Lindqvist \\
+  \textit{* Equal Contributions}\\
+  ``Jumping the Air Gap: Modeling Cyber-Physical Attack Paths in the Internet-of-Things'' \\
+  3rd ACM CCS Cyber-Physical Systems Security and Privacy Workshop \\
+  November 2017.\\
+  DOI: \url{https://doi.org/10.1145/3140241.3140252}
+\item {\bf Prashant Anantharaman}, Michael M. Millian, Sergey Bratus, Meredith L. Patterson.\\
+  ``Input Handling Done Right: Building Hardened Parsers using Language-theoretic Security''\\
+  2nd IEEE Cybersecurity Development Conference, Boston, MA\\
+  September 2017.\\
+  DOI: \url{https://doi.org/10.1109/SecDev.2017.12}
+
+\item {\bf P. Anantharaman}, M. Locasto, G. Ciocarlie, U. Lindqvist.\\
+  ``Building hardened Internet-of-Things implementations using Language-theoretic Security''\\
+  IEEE Symposium on Security and Privacy -- Language-theoretic Security Workshop.\\
+  May 2017.\\
+  DOI: \url{https://doi.org/10.1109/SPW.2017.36}
+\item {\bf P. Anantharaman}, K. Palani, D. Nicol, S.W. Smith.\\
+  ``I am Joe's Fridge: Scalable Identity in the Internet of Things''\\
+  IEEE International Conference on Internet of Things.\\
+  December 2016.\\
+  DOI: \url{https://doi.org/10.1109/iThings-GreenCom-CPSCom-SmartData.2016.47}
+\item G. Ramakrishnan, {\bf P. Anantharaman}, and S. Mukherjee.\\
+  ``Proactive Resource Provisioning Model for Cloud Federation''\\
+  International Conference on Distributed Computing and Internet Technology.\\
+  January 2016.\\
+  DOI: \url{https://doi.org/10.1007/978-3-319-28034-9\_22}
+  \end{enumerate}
+
+\hrule
+
+  %SEMINARS
+  \section*{\color{dartmouthgreen} Talks and Presentations}
+  \begin{itemize}
+    \setlength\itemsep{0ex}
+    \item \textit{IoTHound: Environment-agnostic Device Identification and Monitoring} \\ 10th International Conference on Internet of Things (IoT 2020) \\
+      October 8th, 2020 
+    \item \textit{Building Hardened IoT Implementations with LangSec} \\
+      Nullcon Security Conference, Goa, India \\
+      March 2nd, 2019
+    \item \textit{Ghostbusters: A tale of ELF, ABI and Spectre} \\ BSidesAugusta\\ Augusta, GA \\ September 20th, 2018
+    \item \textit{Going Dark: A Retrospective on the Blackout of 2038} \\ New Security Paradigms Workshop \\ Windsor, UK \\ August 28th, 2018
+    \item \textit{LangSec for Critical Infrastructure: SSP21, a secure lightweight SCADA protocol} \\ 5th LangSec Workshop at IEEE Symposium on Security and Privacy (Oakland)\\ San Francisco, CA\\ May 24th, 2018
+    \item \textit{Input Handling Done Right: Building Hardened Parsers using Language-theoretic Security} \\ IEEE Cybersecurity Development Conference\\ Boston, MA\\ September 24th 2017
+    \item \textit{Building Hardened Internet-of-Things Clients using Language-theoretic Security}\\ 4th LangSec Workshop at IEEE Symposium on Security and Privacy (Oakland)\\ San Jose, CA\\ May 25th 2017
+    \item \textit{Building vertically hardened Industrial-Control-Systems applications using Language-theoretic security}\\ 2nd CREDC Industrial Workshop\\ Tempe, AZ\\ March 28th 2017
+    \item \textit{Scalability Identity in the Internet of Things}\\ IEEE International Conference on Internet of Things\\ Chengdu, China\\ December 18th 2016
+  \end{itemize}
+
+
+\hrule
+\section*{\color{dartmouthgreen} Teaching Experience}
+  \begin{tabular}{r l}
+  \setlength\itemsep{0ex}
+  Sep. `16 -- Nov. `16 & Teaching Assistant for \textit{Programming Languages (COSC 59)} \\
+    &  Instructor -- Dr. Sergey Bratus \\
+  Jun. `15 & \textit{Ruby on Rails} Instructor at FSFTN Summer Camp \\
+     & Number of participants: 120 \\
+     & Venue: IIT Madras, Chennai, India \\
+  Sep. `13 -- May `15 & Lecturer at CEG's GNU/Linux Users Group \\
+                      & Topics covered: Ruby, Python, Git, Vim, Emacs \\
+                      & Number of participants: 70\\
+  \end{tabular}
+
+
+\vspace{0.5cm}
+\hrule
+\section*{\color{dartmouthgreen} Advising}
+
+  Prashant has advised the following Masters and undergraduate research students in collaboration with Prof.\ Sean W. Smith and Prof.\ Sergey Bratus at Dartmouth College.
+
+  \begin{longtable}[l]{r l}
+    & \textbf{Masters} \\
+    2021 & Anmol Chachra (LangSec: RADICS Project)\\ 
+    2019 & Sameed Ali (LangSec)\\
+    & \textbf{Undergrads} \\
+    2021 & Patrick Norton (Verified Parsing) \\
+    2021 & Shikhar Sinha (Senior Thesis: FPGA Parsing) \\
+    2021 & Joanna Liu (FPGA Parsing)\\
+    2020 & Andrew Truong (MQTT Security)\\
+    2020 & Celina Tala (Safedocs)\\
+    2020 & Syed H. Tanveer (LangSec: RADICS Project)\\
+    2018 & Patrick J. Flathers (LangSec)\\
+    2017 & Rafael Brantley (PhasorSec)\\
+    2017 & Galen Brown (PhasorSec)\\
+  \end{longtable}
+\vspace{0.5cm}
+
+\hrule
+
+\vspace{0.5cm}
+
+  \section*{\color{dartmouthgreen} Select Fellowships and Awards}
+
+  \begin{tabular}{r l}
+\setlength\itemsep{0ex}
+2020 &  Best Paper Award at the International Conference on Internet of Things (IoT'20) \\
+2019 &  Honorable Mention Award at the International Conference on Internet of Things (IoT'19)\\
+2015 & TCS Award for Best Senior Thesis\\
+  \end{tabular}
+
+\vspace{0.5cm}
+\hrule
+
+
+
+  \section*{\color{dartmouthgreen} Press and News Coverage}
+
+  \begin{tabularx}{\textwidth}{r c X}
+   & & \textbf{Quotes on Ransomware Attacks} \\
+     2021 & {\color{dartmouthgreen}WCAX} & TV News Live Interview -- ``How can UVM Health Network prevent future \\
+     & & cyberattacks?'' -- \url{https://www.wcax.com/2021/05/28/how-can-uvm-health-network-prevent-future-cyberattacks/} \\
+     2021 & {\color{dartmouthgreen}Vox Recode} & Quoted in the article -- ``What you need to know about ransomware and the future of cyberattacks'' -- \url{https://www.vox.com/recode/22527272/ransomware-cyberattacks-bitcoin-explained}\\
+  & & \textbf{PhasorSec}\\
+     2019 & {\color{dartmouthgreen}Dartmouth Press} &  Dartmouth’s PhasorSec Protects Power Grids from Cyberattack -- \url{https://www.dartmouth.edu/press-releases/dartmouths\_phasorsec\_protects\_power-grids\_from\_cyberattack.html} \\
+
+  & & \textbf{Spectre V1 Defenses} \\
+    2018 & {\color{dartmouthgreen}Dartmouth News} & Graduate Students Create Computer-Chip Security Fix -- \url{https://news.dartmouth.edu/news/2018/10/graduate-students-create-computer-chip-security-fix} \\
+    2018 & {\color{dartmouthgreen}Bleeping Computer} & Academics Announce New Protections Against Spectre and Rowhammer Attacks -- \url{https://www.bleepingcomputer.com/news/security/academics-announce-new-protections-against-spectre-and-rowhammer-attacks/} \\
+    2018 & {\color{dartmouthgreen}The Register} & Spectre rises from the dead to bite Intel in the return stack buffer -- \url{https://www.theregister.co.uk/2018/07/23/spectre\_return\_stack\_buffer/}\\
+    2018 & {\color{dartmouthgreen}SlashDot} & Academics Publish New Software-Level Protections Against Spectre and Rowhammer Attacks -- \url{https://it.slashdot.org/story/18/07/23/1613217/academics-publish-new-software-level-protections-against-spectre-and-rowhammer-attacks} \\
+
+\end{tabularx}
+
+
+  %AWARDS
+
+\vspace{0.5cm}
+
+
+%% \subsection*{Posters}
+
+%% \begin{enumerate}
+%% \setlength\itemsep{0ex}
+%% \item \textbf{P. Anantharaman}, J. P. Brady, S. Bratus, I. R. Jenkins, M. Millian, D.M. Nicol, K. Palani, E. Reed, S.W. Smith\\
+%%     "Increasing Cyber-Resilience of Large-Scale and Long-Lived Energy Delivery Infrastructure (EDI)"\\
+%%     2nd CREDC Industry Workshop ,Tempe, AZ\\
+%%     March 2017
+
+%% \item \textbf{P. Anantharaman}, D.M. Nicol, K. Palani, E. Reed, S. W. Smith\\
+%%     "Scalable Identity in the Smart Grid"\\
+%%     2nd CREDC Industry Workshop ,Tempe, AZ\\
+%%     March 2017
+%% \item  K. Palani, {\bf P. Anantharaman}, D.M. Nicol, S. W. Smith\\
+%%     "Namespace and Cryptographic Complexities in the Smart Grid"\\
+%%     1st CREDC Industry Workshop ,Champaign, IL\\
+%%     March 2016
+%% \end{enumerate}
+
+\hrule
+
+
+\section*{\color{dartmouthgreen} Professional Service}
+
+  \begin{tabular}{r l}
+  & \textbf{Organizing Committee}\\
+  2022 & New Security Paradigms Workshop (NSPW) Local Chair \\
+  2021 & New Security Paradigms Workshop (NSPW) Local Chair \\
+  2020 &New Security Paradigms Workshop (NSPW) Local Chair \\
+  & \textbf{Program Committee Member} \\
+  2021 & International Conference on Internet Monitoring and Protection (ICIMP) \\
+  2020 & International Conference on Internet Monitoring and Protection (ICIMP) \\
+  & \textbf{Reviewer} \\
+  2021 & IEEE IoT World Forum \\
+  2020 & IEEE/ACM Transactions on Networking \\
+  2018 & IEEE SmartGridComm \\
+  2017 & LangSec Workshop \\
+  \end{tabular}
+
+\vspace{0.5cm}
+
+\hrule
+
+\section*{\color{dartmouthgreen} Community Service}
+  \begin{tabular}{r l}
+   2020--21 & \textbf{Dartmouth's Graduate Student Council}  \\
+            &  Elected Representative of the Computer Science Department \\
+  2019--20 & \textbf{PhD Student Ambassador} \\
+           &   Served as a mentor for incoming Computer Science PhD students \\
+  \end{tabular}
+
+\vspace{0.5cm}
+\hrule
+
+
+\section*{\color{dartmouthgreen} Programing Environments}
+\setlength\itemsep{0ex}
+  \begin {itemize}
+\setlength\itemsep{0ex}
+\item \textbf{\color{dartmouthgreen}Languages:} Ruby, Python, Dafny, Rust, C, C++, VHDL, HTML, CSS, Javascript, Go, Java, Lisp, R
+\item \textbf{\color{dartmouthgreen}Plaforms:} Unix (Linux, Solaris), Windows
+\item \textbf{\color{dartmouthgreen}Tools:} Scapy, Rails, Django, Flask, Docker, Wireshark, Linux, Alloy Model Checker, Scikit-Learn, Hammer, Spin
+\item \textbf{\color{dartmouthgreen}Databases:} Mysql, Postgresql, Oracle
+        \item \textbf{\color{dartmouthgreen}Editors:} Vim, Emacs, VS Code, Xilinx Vivado, Android Studio, Atom
 \end{itemize}
 
-%AWARDS
-\section*{Selected Fellowships and Awards}
-\setlength\itemsep{0ex}
-	\begin {itemize}
-\setlength\itemsep{0ex}
-\item 50\% fee scholarship for first year of masters at Dartmouth College. 
-\item TCS Award for Best Senior Thesis -- 2015
-\end{itemize}
+\hrule
 
+\section*{\color{dartmouthgreen} References}
+
+\textbf{Sean W. Smith}\\
+Professor, Computer Science, Dartmouth College\\
+{\color{dartmouthgreencompl} sws@cs.dartmouth.edu}
+\vspace{0.5cm}
+
+\textbf{Sergey Bratus}\\
+Research Associate Professor, Computer Science, Dartmouth College\\
+{\color{dartmouthgreencompl} sergey.l.bratus@dartmouth.edu}\\\\
 \end{document}

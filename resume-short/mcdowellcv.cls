@@ -1,4 +1,8 @@
 \ProvidesClass{mcdowellcv}[2015/12/15 v1.1.0 McDowell CV class]
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{dartmouthgreen}{RGB}{0, 105, 62}
+\definecolor{dartmouthgreencompl}{RGB}{10, 0, 105}
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
@@ -98,11 +102,14 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 % Name
 \makeatletter
 
+\newcommand\motto[1]{\def\@motto{#1}}
+\motto{}
 \newcommand\name[1]{\def\@name{#1}}
 \name{}
 
 \newcommand\printname{
-	\color{ForestGreen}\textbf{\huge{\textsc{\@name}}}
+	%\color{dartmouthgreen}\textbf{\huge{\textsc{\@name}}}
+	\@name
 }
 % \textls[110]
 \makeatother
@@ -140,7 +147,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\vspace*{\beforesectionheaderspace}
 	% Set text margins to equal \tabcolsep (6pt by default)
 	\begin{adjustwidth}{\sectionheadermargin}{\sectionheadermargin}
-		\color{NavyBlue}\textsc{\textbf{#1}}
+		\color{dartmouthgreencompl}\textsc{\textbf{#1}}
 	\end{adjustwidth}
 	\smallskip
 	\hrule height \sectionheaderhrlueheight
@@ -162,7 +169,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {lefttitledefined} or togl {centertitledefined} or togl {righttitledefined}}{
 		\begin{tabu} to 1\textwidth { X[l,m] X[c,m+2] X[r,m] }
-			\textbf{#2} & \normalsize\color{ForestGreen} \textbf{#3} & \textbf{#4} \\
+			\textbf{#2} & \normalsize\color{dartmouthgreen} \textbf{#3} & \textbf{#4} \\
 		\end{tabu}
 		% Add space according to the specidied number of lines
 		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}
